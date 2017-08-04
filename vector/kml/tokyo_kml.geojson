@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "Name": "東京スカイツリー", "Description": "これは、東京スカイツリーです。" }, "geometry": { "type": "Point", "coordinates": [ 139.81072529569019, 35.710029452920509, 634.0 ] } },
+{ "type": "Feature", "properties": { "Name": "東京タワー", "Description": "これは、東京タワーです。" }, "geometry": { "type": "Point", "coordinates": [ 139.745476, 35.658537, 333.0 ] } }
+]
+}

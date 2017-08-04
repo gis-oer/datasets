@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+	<name>東京-NY</name>
+	<open>1</open>
+	<Style id="line">
+		<LineStyle><!--ラインのスタイルを指定-->
+			<color>ff2EF7FE</color><!--最初の2桁80(50%透過)で透過を指定し、後ろの16進数のカラーで2桁ずつでそれぞれRGB(BGRの順)を示す。-->
+			<width>10</width><!--ライン幅を指定-->
+		</LineStyle>
+	</Style>
+	<Placemark>
+		<name>tokyo-newyork</name>
+		<description>東京とニューヨークをつなぐ線です。</description>
+		<LookAt>
+			<longitude>-152.8348568845707</longitude>
+			<latitude>41.8452340473708</latitude>
+			<altitude>0</altitude>
+			<heading>10.89057864746075</heading>
+			<tilt>1.507082189563618</tilt>
+			<range>9465727.599999348</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#line</styleUrl><!--lineのidを使ってスタイリング-->
+		<LineString><!--ラインを作成する。-->
+			<tessellate>1</tessellate>
+			<coordinates><!--ラインの頂点を作成する。-->
+				139.7321,35.7085,0<!--経緯度と標高-->
+				285.9941,40.7121,0
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

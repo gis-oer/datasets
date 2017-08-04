@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+
+<!--↑の文をコピーして貼り付ける-->
+
+<!--↓KMLを記述していく-->
+<Document>
+	<name>東京スカイツリーと東京タワー</name> <!--データ名を記入-->
+	<open>1</open>
+	<StyleMap id="m_ylw-pushpin"><!--スタイルの指定先を記述-->
+		<Pair>
+			<key>normal</key><!--普段のスタイルの指定先を記述-->
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key><!--マウスオーバーしたときのスタイルの指定先を記述-->
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl"><!--マウスオーバーしたときのアイコンのスタイルを記述-->
+		<IconStyle>
+			<scale>2</scale><!--アイコンの大きさ-->
+			<Icon><!--アイコンURLを指定　以下を変更すれば、オリジナルのアイコンになる-->
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/><!--実際の地点とあうように位置をずらして表示-->
+		</IconStyle>
+		<LineStyle><!--アイコンにつなぐラインの色を指定-->
+			<color>ff7faaff</color><!--オレンジ系の色を指定-->
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin"><!--普段のアイコンのスタイルを記述-->
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff7faaff</color>
+		</LineStyle>
+	</Style>
+	<Placemark>
+		<name>東京スカイツリー</name><!--データの名前-->
+		<description>これは、東京スカイツリーです。</description><!--説明文(htmlで記述できる)-->
+		<LookAt>
+			<longitude>139.8105736546319</longitude><!--経度-->
+			<latitude>35.70869047827442</latitude><!--緯度-->
+			<altitude>0</altitude><!--標高-->
+			<heading>0</heading><!--機首方位、北が0°-->
+			<tilt>53.37</tilt><!--傾き-->
+			<range>2164.7</range><!--範囲-->
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode><!--基準は海面とする-->
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Point>
+			<extrude>1</extrude><!--ポイントの経緯度と標高を記述-->
+			<altitudeMode>relativeToGround</altitudeMode><!--地面を基準にアイコンを配置-->
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>139.8107252956902,35.71002945292051,634</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark><!--一つのファイルに複数のPlace Markを作成する場合はこの下に記述-->
+		<name>東京タワー</name><!--データの名前-->
+		<description>これは、東京タワーです。</description>
+		<LookAt>
+			<longitude>139.745476</longitude><!--経度-->
+			<latitude>35.658537</latitude><!--緯度-->
+			<altitude>0</altitude><!--標高-->
+			<heading>0</heading><!--機首方位、北が0°-->
+			<tilt>53.37</tilt><!--傾き-->
+			<range>2164.7</range><!--範囲-->
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode><!--基準は海面とする-->
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Point>
+			<extrude>1</extrude><!--ポイントの経緯度と標高を記述-->
+			<altitudeMode>relativeToGround</altitudeMode><!--地面を基準にアイコンを配置-->
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>139.745476,35.658537,333</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>
