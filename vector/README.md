@@ -1,4 +1,4 @@
-# Data license
+# データの出典
 
 |Name|Data Source|
 |---|---|
