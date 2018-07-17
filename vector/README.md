@@ -8,3 +8,4 @@
 |echizen_map.kmz|[越前市オープンデータ](http://www.city.echizen.lg.jp/office/010/021/open-data-echizen.html)|
 |flood_assumed_area.kml|[越前市オープンデータ](http://www.city.echizen.lg.jp/office/010/021/open-data-echizen.html)|
 |refuge.kml|[越前市オープンデータ](http://www.city.echizen.lg.jp/office/010/021/open-data-echizen.html)|
+|world_ja|[thematicmapping.org](http://thematicmapping.org/downloads/world_borders.php], [一部で、OpenStreetMapを参考にトレース](https://www.openstreetmap.org/)|
